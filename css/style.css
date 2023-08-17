@@ -606,6 +606,12 @@ button {
   font-size: 18px;
   margin-right: 12px;
 }
+.sparks .item {
+  padding-right: 100px;
+}
+.owl-item :active {
+  width: 950px !important;
+}
 .sparks .discription2 .dis a {
   color: #2586c8;
   font-weight: 600;
@@ -646,24 +652,7 @@ button {
   border-radius: 11px;
 }
 
-.slider-container {
-  display: flex;
-  column-gap: 24px;
-  position: relative;
-}
 /* Add fade-in and fade-out transition for slides */
-.slider-container .item {
-  visibility: hidden;
-
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-.slider-container .item.active {
-  visibility: visible;
-  display: block;
-  opacity: 1;
-}
 
 /*========= partner part end ========*/
 
