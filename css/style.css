@@ -60,7 +60,155 @@ ul {
 a {
   text-decoration: none;
 }
+button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 17px 42px;
+  background-color: #2586c8;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 40px;
+}
 /*========= commone css end ============ */
+
+/*========== brand part start========== */
+
+/*========== banner part start========== */
+.banner-image1 {
+  border-radius: 0px 80px 80px 0px;
+  border: 1px solid #2586c8;
+}
+.banner-image2 {
+  border-radius: 80px 0px 0px 80px;
+}
+.image_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  background: rgba(57, 57, 57, 0.5);
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.overlay_1 {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 0px 80px 80px 0px;
+  /* padding: 45px; */
+  /* inset: 0; */
+}
+.overlay_2 {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 80px 0px 0px 80px;
+  /* padding: 45px; */
+  /* inset: 0; */
+}
+.text-overlay {
+  text-align: justify;
+  color: #ffff;
+  max-width: 400px;
+  line-height: 28px;
+}
+/* .overlay_2 {
+    inset: 0;
+  } */
+.button-bg {
+  background-color: #2586c8;
+  font-size: 20px;
+  font-weight: 600;
+
+  padding: 20px 42px 20px 42px;
+}
+/*========== banner part end========== */
+/*========== brand part start========== */
+.bannar picture img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 58px;
+  margin-bottom: 53px;
+}
+.bannar .images {
+  position: relative;
+}
+.bannar .images .details .texts h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.bannar .images .details .texts p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.bannar .images .details .vewtext2 {
+  text-align: right;
+}
+
+.bannar .images .details .texts {
+  margin: 0 auto;
+  padding: 48px 157px;
+  border-radius: 80px;
+}
+
+.bannar .images .details {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 80px;
+  height: 40%;
+  background-color: rgba(10, 46, 70, 0.6);
+}
+.bannar button {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 48px;
+  font-size: 20px;
+  font-weight: 400;
+}
+/*========== banner part end========== */
+
+/*========== ourpatner part start========== */
+.ourpatner {
+  margin-top: 120px;
+  margin-bottom: 32px;
+}
+.ourpatner .container {
+  border-radius: 12px;
+  padding: 56px 40px;
+  background-image: url("../images//Patterns.png");
+  width: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ourpatner h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.ourpatner p {
+  font-size: 18px;
+  color: #555c61;
+}
+.ourpatner .main {
+  align-items: center;
+}
+/*========== ourpatner part end========== */
 
 /*========== Stakeholder part start========== */
 .stakeholder .titel h2::after {
@@ -505,11 +653,14 @@ a {
 }
 /* Add fade-in and fade-out transition for slides */
 .slider-container .item {
+  visibility: hidden;
+
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 .slider-container .item.active {
+  visibility: visible;
   display: block;
   opacity: 1;
 }
