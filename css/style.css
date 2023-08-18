@@ -287,6 +287,9 @@ button {
   margin-right: 12px;
   border-radius: 8px;
 }
+.stakeholder button {
+  margin-top: 0;
+}
 .stakeholder .details {
   display: flex;
 }
@@ -343,6 +346,9 @@ button {
   padding: 6px 29px;
   border-radius: 12px !important;
   color: #555c61;
+}
+.programs button {
+  margin-top: 0;
 }
 .programs .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -612,6 +618,7 @@ button {
 .owl-item :active {
   width: 950px !important;
 }
+
 .sparks .discription2 .dis a {
   color: #2586c8;
   font-weight: 600;
